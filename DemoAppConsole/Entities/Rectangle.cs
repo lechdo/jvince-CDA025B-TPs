@@ -7,15 +7,9 @@ namespace DemoAppConsole
         public int Largeur { get; set; }
         public int Longueur { get; set; }
 
-        public override double Aire()
-        { 
-            return Largeur * Longueur;
-        }
+        public override double Aire => Largeur * Longueur;
 
-        public override double Perimetre()
-        {
-            return (Largeur * 2) + (Longueur * 2);
-        }
+        public override double Perimetre => (Largeur * 2) + (Longueur * 2);
 
         public override int GetHashCode()
         {

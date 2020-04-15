@@ -9,15 +9,9 @@ namespace DemoAppConsole
         public int B { get; set; }
         public int C { get; set; }
 
-        public override double Aire()
-        {
-            return (A * B) / 2; 
-        }
+        public override double Aire => (A * B) / 2;
 
-        public override double Perimetre()
-        {
-            return A + B + C;
-        }
+        public override double Perimetre => A + B + C;
 
         public override int GetHashCode()
         {

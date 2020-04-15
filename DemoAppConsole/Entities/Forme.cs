@@ -13,9 +13,9 @@ namespace DemoAppConsole
         public const string AIRE = "Aire = {0}";
         public const string PERIMETRE = "Périmètre = {0}";
 
-        public abstract double Aire();
+        public abstract double Aire { get; }
 
-        public abstract double Perimetre();
+        public abstract double Perimetre { get; }
 
         public override bool Equals(object obj)
         {
@@ -26,9 +26,9 @@ namespace DemoAppConsole
         {
             return new StringBuilder()
                 .Append(Environment.NewLine)
-                .Append(String.Format(AIRE, Aire()))
+                .Append(String.Format(AIRE, Aire))
                 .Append(Environment.NewLine)
-                .Append(String.Format(PERIMETRE, Perimetre()))
+                .Append(String.Format(PERIMETRE, Perimetre))
                 .Append(Environment.NewLine)
                 .ToString();
         }

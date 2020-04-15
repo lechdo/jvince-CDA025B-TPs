@@ -7,15 +7,9 @@ namespace DemoAppConsole
     {
         public int Rayon { get; set; }
 
-        public override double Aire()
-        {
-            return Math.PI * Math.Pow(Rayon, 2); 
-        }
+        public override double Aire => Math.PI * Math.Pow(Rayon, 2);
 
-        public override double Perimetre()
-        {
-            return 2* Math.PI * Rayon;
-        }
+        public override double Perimetre => 2 * Math.PI * Rayon;
 
         public override int GetHashCode()
         {

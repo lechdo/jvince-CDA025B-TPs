@@ -7,10 +7,9 @@ namespace DemoAppConsole
     {
         public int Longueur { get; set; }
 
-        public override double Aire()
-        {
-            return Math.Pow(Longueur,2);
-        }
+        public override double Aire => Math.Pow(Longueur, 2);
+
+        public override double Perimetre => Longueur * 4;
 
         public override int GetHashCode()
         {
@@ -18,12 +17,6 @@ namespace DemoAppConsole
             hash = hash * 31 + Longueur.GetHashCode();
             return hash;
         }
-
-        public override double Perimetre()
-        {
-            return Longueur * 4;
-        }
-
 
         public override string ToString()
         {
