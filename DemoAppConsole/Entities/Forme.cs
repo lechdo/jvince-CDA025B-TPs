@@ -19,11 +19,11 @@ namespace DemoAppConsole
         public override string ToString()
         {
             return new StringBuilder()
-                .Append("\n")
+                .Append(Environment.NewLine)
                 .Append(String.Format(AIRE, Aire()))
-                .Append("\n")
+                .Append(Environment.NewLine)
                 .Append(String.Format(PERIMETRE, Perimetre()))
-                .Append("\n")
+                .Append(Environment.NewLine)
                 .ToString();
         }
 
