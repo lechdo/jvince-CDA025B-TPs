@@ -17,6 +17,13 @@ namespace DemoAppConsole
             return 2* Math.PI * Rayon;
         }
 
+        public override int GetHashCode()
+        {
+            int hash = base.GetHashCode();
+            hash = hash * 31 + Rayon.GetHashCode();
+            return hash;
+        }
+
         public override string ToString()
         {
             return new StringBuilder()

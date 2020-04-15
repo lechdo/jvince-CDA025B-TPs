@@ -17,6 +17,14 @@ namespace DemoAppConsole
             return (Largeur * 2) + (Longueur * 2);
         }
 
+        public override int GetHashCode()
+        {
+            int hash = base.GetHashCode();
+            hash = hash * 31 + Longueur.GetHashCode();
+            hash = hash * 31 + Largeur.GetHashCode();
+            return hash;
+        }
+
         public override string ToString()
         {
             return new StringBuilder()

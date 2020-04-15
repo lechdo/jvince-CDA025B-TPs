@@ -19,6 +19,15 @@ namespace DemoAppConsole
             return A + B + C;
         }
 
+        public override int GetHashCode()
+        {
+            int hash = base.GetHashCode();
+            hash = hash * 31 + A.GetHashCode();
+            hash = hash * 31 + B.GetHashCode();
+            hash = hash * 31 + C.GetHashCode();
+            return hash;
+        }
+
         public override string ToString()
         {
             return new StringBuilder()

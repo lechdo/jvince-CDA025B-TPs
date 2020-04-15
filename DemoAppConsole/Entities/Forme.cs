@@ -14,7 +14,13 @@ namespace DemoAppConsole
         public const string PERIMETRE = "Périmètre = {0}";
 
         public abstract double Aire();
+
         public abstract double Perimetre();
+
+        public override bool Equals(object obj)
+        {
+            return this.GetHashCode() == obj.GetHashCode();
+        }
 
         public override string ToString()
         {
@@ -27,6 +33,8 @@ namespace DemoAppConsole
                 .ToString();
         }
 
+
+        
 
     }
 }
