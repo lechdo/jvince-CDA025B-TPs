@@ -11,7 +11,6 @@ namespace Module03TP
     {
         private const string INTITULE_LISTE = "Liste({0}), {1} :";
         private const string INTITULE_UNITE = "{0}, {1} : {2}\n";
-        private static IGrouping<string, Livre> auteurMaxLivres;
 
         public static void Main(string[] args)
         {
