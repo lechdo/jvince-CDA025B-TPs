@@ -1,0 +1,28 @@
+﻿@model Module05TP03.Models.PizzaViewModel
+@using Module05TP03.Helpers
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    @Html.Partial("_PizzaDisplayWithId")
+
+    @Html.CustomSubmit("Save")
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
