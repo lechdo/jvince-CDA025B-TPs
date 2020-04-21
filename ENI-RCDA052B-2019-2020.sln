@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaEntities", "PizzaEntit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module05TP03", "Module05TP03\Module05TP03.csproj", "{8C2221D1-E99E-409D-BAFC-24CCC6819866}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DojoBO", "DojoBO\DojoBO.csproj", "{0BBA0441-0AB7-4112-946B-521C9CEC7367}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module06TP01", "Module06TP01\Module06TP01.csproj", "{6D6D74A4-A601-4A2D-A10E-0A9791753A67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{8C2221D1-E99E-409D-BAFC-24CCC6819866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C2221D1-E99E-409D-BAFC-24CCC6819866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C2221D1-E99E-409D-BAFC-24CCC6819866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BBA0441-0AB7-4112-946B-521C9CEC7367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BBA0441-0AB7-4112-946B-521C9CEC7367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BBA0441-0AB7-4112-946B-521C9CEC7367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BBA0441-0AB7-4112-946B-521C9CEC7367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D6D74A4-A601-4A2D-A10E-0A9791753A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D6D74A4-A601-4A2D-A10E-0A9791753A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D6D74A4-A601-4A2D-A10E-0A9791753A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D6D74A4-A601-4A2D-A10E-0A9791753A67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
