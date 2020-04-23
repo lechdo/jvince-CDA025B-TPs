@@ -1,10 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DojoBO
 {
-    public class Arme
+    public class Arme : DojoEntity
     {
-        public int Id { get; set; }
+        [DisplayName("Arme")]
         public string Nom { get; set; }
         public int Degats { get; set; }
     }

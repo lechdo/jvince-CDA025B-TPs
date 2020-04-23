@@ -114,10 +114,13 @@ namespace Module06TP01.Controllers
         {
             if (ModelState.IsValid)
             {
-                Samourai samourai = db.Samourais.Find(vm.Samourai.Id);
+                // Lazy loading, demander explicitement, passer en eager
+                Samourai samourai = db.Samourais.Include(x => x.Arme).FirstOrDefault(s => s.Id == vm.Samourai.Id);
                 samourai.Nom = vm.Samourai.Nom;
                 samourai.Force = vm.Samourai.Force;
                 samourai.Arme = db.Armes.Find(vm.IdArme);
+
+                
 
                 db.SaveChanges();
                 return RedirectToAction("Index");
